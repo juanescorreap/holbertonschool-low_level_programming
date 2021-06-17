@@ -1,4 +1,7 @@
-/*Print to the standard output*/
+/*
+ *Print to the standard output
+ */
+
 #include <stdio.h>
 
 int main(void)
