@@ -1,5 +1,5 @@
 /*
- * prints holberton proyect 0x00 4.
+ * Print to standard output
  */
 
 #include <stdio.h>
