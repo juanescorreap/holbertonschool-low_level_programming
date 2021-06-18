@@ -13,8 +13,8 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar (ch);
 }
-{ 
-putchar (012); 
+{
+putchar (012);
 }
 return (0);
 }
