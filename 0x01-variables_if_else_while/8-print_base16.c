@@ -14,7 +14,7 @@ n++;
 }
 while (l <= 'f')
 {
-putchar (l);	
+putchar (l);
 l++;
 }
 putchar (10);
