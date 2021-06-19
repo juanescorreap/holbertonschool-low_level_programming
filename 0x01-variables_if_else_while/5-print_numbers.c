@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-int ch = 49;
+int ch = 48;
 while (ch <= 57)
 {
 putchar (ch);
