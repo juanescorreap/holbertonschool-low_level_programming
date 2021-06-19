@@ -6,16 +6,16 @@
 int main(void)
 {
 int n = 48;
-char l = 97;
+char l = 'a';
 while (n <= 57)
 {
 putchar (n);
 n++;
-while (l <= 102)
+}
+while (l <= 'f')
 {
 putchar (l);	
 l++;
-}
 }
 putchar (10);
 return (0);
