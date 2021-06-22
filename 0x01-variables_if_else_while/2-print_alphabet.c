@@ -9,12 +9,10 @@ int
 main(void)
 {
 char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
+for (ch = "a" ; ch <= "z" && ch != "e" && ch != "q" ; ch++)
 {
 putchar (ch);
 }
-{
-putchar (012);
-}
+putchar (10);
 return (0);
 }
