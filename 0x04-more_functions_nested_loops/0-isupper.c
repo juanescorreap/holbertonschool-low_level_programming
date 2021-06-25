@@ -2,6 +2,7 @@
 /**
  * _isupper - Checks if  variable c is uppercase
  * Return: if uppercase 1, otherwise 0
+ *@c vairable to be evaluated for upper case
  */
 int _isupper(int c)
 
