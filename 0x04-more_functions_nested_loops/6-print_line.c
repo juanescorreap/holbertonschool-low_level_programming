@@ -2,13 +2,14 @@
 /**
  * print_line - prints a straight line in the terminal
  * Return: void
+ * @n: number of times the line will be printed
  */
 void print_line(int n)
 
 {
 	int lines;
 
-	if (n < 0)
+	if (n <= 0)
 	{
 		_putchar(10);
 	}
