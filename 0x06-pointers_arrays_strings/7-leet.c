@@ -3,8 +3,6 @@
  * *leet - Function that encodes a string into 1337.
  * Return: String of type char
  * @s: String to be encoded
- * @x: Alphabet array
- * @y: Numbers array
  */
 char *leet(char *s)
 {
