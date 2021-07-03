@@ -13,13 +13,13 @@ char *leet(char *s)
 	int i;
 	int j;
 
-	for (i = 0; s[i] !=0; i++)
+	for (i = 0; s[i] != 0; i++)
 	{
 		for (j = 0; j < 10 ; j++)
 		{
 			if (s[i] == x[j])
 			{
-				s[i] = y [j];
+				s[i] = y[j];
 			}
 		}
 	}
