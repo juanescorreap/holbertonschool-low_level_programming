@@ -7,13 +7,11 @@
  */
 char *_strchr(char *s, char c)
 {
-	do
-	{
-		if(*s == c)
+	do {
+		if (*s == c)
 		{
-			return(char*)s;
+			return ((char *)s);
 		}
-	}
-	while (*s++);
+	} while (*s++);
 	return (00);
 }
