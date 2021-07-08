@@ -3,6 +3,7 @@
 /**
  * main - Program that prints its name
  * Return: Integer, 0 if succesful
+ *@argc: Number of arguments passed to the function
  * @argv: array of strings cointaining the arguments
  */
 int main(int argc __attribute__((unused)), char *argv[])
