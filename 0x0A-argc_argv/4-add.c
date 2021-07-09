@@ -11,28 +11,26 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i;
+	int j;
 
-	if (argc == 0)
+	if (argc == 1)
 	{
 		printf("0\n");
+		return (1);
 	}
-	else
-	{
 		for (i = 1; i < argc; i++)
 		{
-			if ((*argv[i] >= 'a' && *argv[i] <= 'z') ||
-			    (*argv[i] >= 'A' && *argv[i] <= 'Z'))
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (argv[i][j] < '0' || argv[i][j] > '9')
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-			{
-				if (atoi(argv[i]) || (atoi(argv[i]) == 0))
-					sum += atoi(argv[i]);
-			}
+			sum += atoi(argv[i]);
+
 		}
 		printf("%d\n", sum);
-	}
-	return (0);
+		return (0);
 }
