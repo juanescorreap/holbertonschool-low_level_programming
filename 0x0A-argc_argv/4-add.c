@@ -5,7 +5,7 @@
  * main - prints name
  * @argv: array whit arguements
  * @argc: number of arguments
- * Return: 0
+ * Return: 0 if succesful
  */
 int main(int argc, char *argv[])
 {
