@@ -4,9 +4,9 @@
 /**
  * **alloc_grid - Function that returns a pointer
  * to a 2 dimensional array of integers
- * Return: Pointer to the leading string
- * @s1: String to be concatenated
- * @s2: String to be appended
+ * Return: Double pointer to the leading string
+ * @width: Width of the matrix
+ * @height: Height of the matrix
  */
 int **alloc_grid(int width, int height)
 {
