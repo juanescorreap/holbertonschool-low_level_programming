@@ -14,7 +14,6 @@ int i;
 
 if (height <= 0 || grid == NULL)
 {
-	return;
 }
 for (i = 0; i < height; i++)
 {
