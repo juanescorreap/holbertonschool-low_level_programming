@@ -8,13 +8,14 @@
  * @s1: String to be concatenated
  * @s2: String to be appended
  */
- int **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int i;
 	int n;
 	int f;
 	int **newstr;
-	if(width == 0 || height == 0)
+
+	if (width == 0 || height == 0)
 	{
 		return (NULL);
 	}
@@ -23,24 +24,24 @@
 	{
 		return (00);
 	}
-	for(i = 0; i <= height; i++)
+	for (i = 0; i <= height; i++)
 	{
 		newstr[i] = malloc(sizeof(int) * width);
 		if (newstr[i] == NULL)
 		{
-			for(i = height; i >= 0; i--)
+			for (i = height; i >= 0; i--)
 			{
 				free(newstr[i]);
 				free(newstr);
 			}
 		}
 	}
-	for(f = 0; f <= height; f++)
+	for (f = 0; f <= height; f++)
 	{
-		for(n = 0; n < width; n++)
+		for (n = 0; n < width; n++)
 		{
 			newstr[f][n] = 0;
 		}
 	}
-	return(newstr);
+	return (newstr);
 }
