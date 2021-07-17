@@ -18,22 +18,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int j;
 	char *newstr;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
+	}
+	if (s2 == NULL)
+	{
 		s2 = "";
 	}
 	for (len = 0; s1[len] != '\0'; len++)
 	{
 	}
-	for (len2 = 0; s2[len2] != 0; len2++)
+	for (len2 = 0; s2[len2] != '\0'; len2++)
 	{
 	}
-	if (n >= s2)
+	if (n >= len2)
 	{
-		len2 = n;
+		n = len2;
 	}
-	newstr = malloc(sizeof(char) * (len + n) + 1));
+	newstr = malloc((sizeof(char) * (len + n)) + 1);
 	if (newstr == NULL)
 	{
 		return (00);
