@@ -4,7 +4,7 @@
 /**
  * *string_nconcat - Function that concatenates two strings.
  * Return: Pointer to newly allocated space in memory.
- * which contains s1, followed by the first n bytes of s2, 
+ * which contains s1, followed by the first n bytes of s2,
  * and null terminated.
  * @s1: String to be concatenated
  * @s2: String to be appended
@@ -14,6 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int i;
 	int len;
+	unsigned int len2;
 	unsigned int j;
 	char *newstr;
 
@@ -25,7 +26,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (len = 0; s1[len] != '\0'; len++)
 	{
 	}
-	newstr = malloc((len + n + 1));
+	for (len2 = 0; s2[len] != 0; len2)
+	{
+	}
+	if (n >= s2)
+	{
+		len2 = n;
+	}
+	newstr = malloc(sizeof(char) * (len + n) + 1));
 	if (newstr == NULL)
 	{
 		return (00);
