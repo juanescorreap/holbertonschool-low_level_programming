@@ -1,3 +1,5 @@
+#ifndef DOG_H
+#define DOG_H
 /**
  * struct dog - Short description
  * @name: Pointer that holds the address to "name"
@@ -11,3 +13,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
