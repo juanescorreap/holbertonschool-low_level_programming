@@ -1,5 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
+#include <stdio.h>
 /**
  * struct dog - Structure with types pointer and float
  * @name: Pointer that holds the address to "name"
@@ -14,4 +15,5 @@ struct dog
 	char *owner;
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 #endif
