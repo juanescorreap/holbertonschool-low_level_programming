@@ -8,7 +8,7 @@
  * @owner: Pointer that holds the address to "owner"
  * Description: Structure that holds multiple values
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
