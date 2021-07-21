@@ -5,14 +5,14 @@
 /**
  * array_iterator - Function that executes a function given
  * as a parameter on each element of an array.
- * @name: Pointer to address of "array"
+ * @array: Pointer to address of "array"
  * @size: Size of the array
  * @action: Pointer to a function that takes pointer int and returns void.
  * Return: Void.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	for (i = 0; i < size; i++)
 	{
