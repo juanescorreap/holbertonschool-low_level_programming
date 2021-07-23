@@ -12,6 +12,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list parameters;
 
+	if (separator == NULL)
+	{
+		separator = "";
+	}
 	va_start(parameters, n);
 	for (i = 0; i < n; i++)
 	{
