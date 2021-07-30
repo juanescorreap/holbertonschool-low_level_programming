@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - Function that returns the number of
+ * list_len - Function that returns the number of
  * elements in a linked list_t list.
  * @h: pointer to a list_t element
  * Return: A size_t value for list_t
