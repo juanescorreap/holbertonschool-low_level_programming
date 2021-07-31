@@ -24,6 +24,11 @@ if (head == NULL || str == NULL)
 		return (NULL);
 	}
 	tmp->str = strdup(str);
+	if (tmp->str == NULL)
+	{
+		free(tmp);
+		return(NULL);
+	}
 	while (tmp->str[i])
 	{
 		i++;
@@ -33,7 +38,6 @@ if (head == NULL || str == NULL)
 	if (*head != NULL)
 	{
 		ptr = (*head);
-
 		while (ptr->next != NULL)
 		{
 			ptr = ptr->next;
