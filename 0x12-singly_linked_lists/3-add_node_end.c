@@ -27,7 +27,7 @@ if (head == NULL || str == NULL)
 	if (tmp->str == NULL)
 	{
 		free(tmp);
-		return(NULL);
+		return (NULL);
 	}
 	while (tmp->str[i])
 	{
