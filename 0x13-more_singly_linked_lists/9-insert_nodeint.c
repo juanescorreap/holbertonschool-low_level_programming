@@ -36,6 +36,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		mvptr = mvptr->next;
 		j++;
 	}
+	if (j < (idx - 1))
+	{
+		return(NULL);
+	}
 	nwnode->next = mvptr->next;
 	mvptr->next = nwnode;
 	return (nwnode);
