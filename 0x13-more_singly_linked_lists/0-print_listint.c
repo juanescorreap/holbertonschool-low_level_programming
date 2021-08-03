@@ -4,8 +4,8 @@
 #include "lists.h"
 /**
  * print_listint -  function that prints
- *  .
- * @h: pointer to a list_t element
+ * all the elements of a listint_t list.
+ * @h: Pointer to the first element of list_t element
  * Return: A size_t value for list_t
  */
 size_t print_listint(const listint_t *h)
