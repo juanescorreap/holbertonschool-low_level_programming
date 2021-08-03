@@ -19,7 +19,7 @@ int pop_listint(listint_t **head)
 	}
 	mvptr = *head;
 	*head = (*head)->next;
-	d = (*head)->n;
+	d = (mvptr)->n;
 	free(mvptr);
 	return (d);
 }
