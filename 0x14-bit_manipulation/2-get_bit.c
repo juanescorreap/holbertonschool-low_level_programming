@@ -14,8 +14,21 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int j;
 	int res;
+	unsigned int digits;
+	unsigned long int num = n;
 
-	res = n >> index;
+	while (n)
+	{
+
+		n = n >> 1;
+		digits++;
+	}
+	if (digits < index)
+	{
+		return (-1);
+	}
+
+	res = num >> index;
 	if (res & 1)
 	{
 		j = 1;
@@ -29,5 +42,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		return (-1);
 	}
+
 	return (j);
 }
