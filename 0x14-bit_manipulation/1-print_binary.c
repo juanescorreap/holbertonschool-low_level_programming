@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
 		n = n >> 1;
 		digits++;
 	}
-	for (i = digits-1; i >= 0; i--)
+	for (i = digits - 1; i >= 0; i--)
 	{
 		res = dec >> i;
 
