@@ -6,6 +6,11 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include "main.h"
+/**
+ * file_copy - Program that copies the content of a file to another file.
+ * @argv:Argument vectors
+ * Return: int.
+ */
 
 void file_copy(char *argv[])
 {
