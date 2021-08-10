@@ -14,7 +14,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd = 0,	 fd2 = 0,  fd3 = 1,  fd4 = 0, fd5 = 0, fd6 = 0;
+	int fd = 0, fd2 = 0, fd3 = 1, fd4 = 0, fd5 = 0, fd6 = 0;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -38,10 +38,16 @@ int main(int argc, char *argv[])
 	{
 		fd3 = read(fd, buffer, 1024);
 		if (fd3 == -1)
-			return (-1);
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
 		fd4 = write(fd2, buffer, fd3);
-		if (fd4 == -1)
-			return (-1);
+		if(fd4 == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
 	}
 	fd5 = close(fd);
 	fd6 = close(fd2);
