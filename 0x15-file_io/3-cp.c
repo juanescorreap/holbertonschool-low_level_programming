@@ -48,9 +48,9 @@ int main(int argc, char *argv[])
 	if (fd5 == -1 || fd6 == -1)
 	{
 		if (fd5 == -1)
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd5);
 		if (fd6 == -1)
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd6);
 		exit(100);
 	}
 	return (1);
