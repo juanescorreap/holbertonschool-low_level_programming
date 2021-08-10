@@ -38,10 +38,10 @@ int main(int argc, char *argv[])
 	{
 		fd3 = read(fd, buffer, 1024);
 		if (fd3 == -1)
-			return (0);
+			return (-1);
 		fd4 = write(fd2, buffer, fd3);
 		if (fd4 == -1)
-			return (0);
+			return (-1);
 	}
 	fd5 = close(fd);
 	fd6 = close(fd2);
