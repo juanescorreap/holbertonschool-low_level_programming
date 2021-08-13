@@ -9,7 +9,7 @@
 /**
  * read_textfile - Function that reads a text file
  * and prints it to the POSIX standard output.
- * @filename:File to be read.
+ * @filename:File to be read
  * @letters: Number of letters it should read and print
  * Return: Actual number of letters it could read and print
  */
