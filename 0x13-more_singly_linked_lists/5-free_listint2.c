@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * free_listint2 - Function  that frees a listint_t
- * @head: pointer to the head of the list to be freed
- * Return: Void
+ * free_listint2 - Function  that frees a listint_t.
+ * @head: Pointer to the head of the list to be freed.
+ * Return: Void.
  */
 void free_listint2(listint_t **head)
 {

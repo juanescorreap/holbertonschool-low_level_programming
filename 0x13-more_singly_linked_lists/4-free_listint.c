@@ -4,8 +4,8 @@
 #include "lists.h"
 /**
  * free_listint - Function  that frees a listint_t list
+ * Return: Void.
  * @head: pointer to the head of the list to be freed
- * Return: Void
  */
 void free_listint(listint_t *head)
 {

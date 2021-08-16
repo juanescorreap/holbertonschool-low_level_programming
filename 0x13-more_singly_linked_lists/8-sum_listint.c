@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * sum_listint - returns the sum of all the
- * data (n) of a listint_t linked list
- * @head: pointer to a pointer to the first element of list_t
- * Return: sum of all the data of the linked list
+ * sum_listint - Function that returns the sum of all the
+ * data (n) of a listint_t linked list.
+ * Return: Sum of all the data of the linked list.
+ * @head: Pointer to a pointer to the first element of list_t.
  */
 int sum_listint(listint_t *head)
 {
