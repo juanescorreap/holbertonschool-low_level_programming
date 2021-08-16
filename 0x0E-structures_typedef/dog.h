@@ -2,11 +2,11 @@
 #define DOG_H
 #include <stdio.h>
 /**
- * struct dog - Structure with types pointer and float
- * @name: Pointer that holds the address to "name"
- * @age: Float that holds the vaule "age"
- * @owner: Pointer that holds the address to "owner"
- * Description: Structure that holds multiple values
+ * struct dog - Structure with types pointer and float.
+ * Description: Structure that holds multiple values.
+ * @name: Pointer that holds the address to "name".
+ * @age: Float that holds the vaule "age".
+ * @owner: Pointer that holds the address to "owner".
  */
 typedef struct dog
 {

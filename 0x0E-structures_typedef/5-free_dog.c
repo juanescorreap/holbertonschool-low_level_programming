@@ -2,9 +2,8 @@
 #include <stdlib.h>
 /**
  * free_dog - Function that frees dogs.
- * @d: Pointer that holds the addres to "dog_t"
  * Return: Void.
- * Description: Frees the values held by the struct
+ * @d: Pointer that holds the addres to "dog_t"
  */
 void free_dog(dog_t *d)
 {

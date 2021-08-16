@@ -1,12 +1,11 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * *new_dog - Function that creates a new dog.
- * @name: Pointer that holds the addres to "name"
- * @age: Variable of type float that holds "age"
- * @owner: Pointer that hold the address to "owner"
+ * new_dog - Function that creates a new dog.
  * Return: newpuppy.
- * Description: Structure that holds multiple values
+ * @name: Pointer that holds the addres to "name".
+ * @age: Variable of type float that holds "age".
+ * @owner: Pointer that hold the address to "owner"
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {

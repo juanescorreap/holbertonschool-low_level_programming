@@ -1,9 +1,9 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * print_dog - Function that  prints a struct dog
- * @d: Pointer that holds the address to "struct dog"
- * Description: Print strcut
+ * print_dog - Function that  prints a struct dog.
+ * Return: Void.
+ * @d: Pointer that holds the address to "struct dog".
  */
 void print_dog(struct dog *d)
 {
