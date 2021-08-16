@@ -4,6 +4,6 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-What are variadic functions  
-How to use va_start, va_arg and va_end macros  
-Why and how to use the const type qualifier  
+What are variadic functions<br />
+How to use va_start, va_arg and va_end macros<br />
+Why and how to use the const type qualifier<br />
