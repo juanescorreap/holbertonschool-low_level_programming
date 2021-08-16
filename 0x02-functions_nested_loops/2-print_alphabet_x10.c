@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
-* print_alphabet_x10 - Prints the alphabet ten times using _putchar
-* Return: returns to zero
+* print_alphabet_x10 - Prints the alphabet ten times using _putchar.
+* Return: Vpid.
 */
 void print_alphabet_x10(void)
 {
