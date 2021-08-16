@@ -2,19 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - Prints the alphabet
-* Return: always returns to 0
+* main - Prints the alphabet.
+* Return: always returns 0.
 */
-int
-main(void)
+int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
-putchar (ch);
-for (ch = 'A' ; ch <= 'Z' ; ch++)
-putchar (ch);
-{
-putchar (012);
-}
-return (0);
+	char ch;
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar(012);
+	return (0);
 }
