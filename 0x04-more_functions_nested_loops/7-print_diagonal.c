@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_diagonal - Function that draws a diagonal line on the terminal
- * Return: Void
- * @n:Number of times the character \ should be printed
+ * print_diagonal - Function that draws a diagonal line on the terminal.
+ * Return: Void.
+ * @n:Number of times the character \ should be printed.
  */
 void print_diagonal(int n)
 {

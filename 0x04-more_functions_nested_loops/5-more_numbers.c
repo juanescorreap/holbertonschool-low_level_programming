@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * more_numbers - prints numbers from 0 to 14 ten times
- * Return: void
+ * more_numbers - Prints numbers from 0 to 14 ten times
+ * Return: Void.
  */
 void more_numbers(void)
 {
@@ -14,7 +14,7 @@ void more_numbers(void)
 		{
 			if ((b / 10) != 0)
 			{
-			_putchar((b / 10) + '0');
+				_putchar((b / 10) + '0');
 			}
 			_putchar((b % 10) + '0');
 		}
@@ -22,4 +22,3 @@ void more_numbers(void)
 		_putchar(10);
 	}
 }
-

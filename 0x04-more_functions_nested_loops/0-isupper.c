@@ -1,11 +1,10 @@
 #include "holberton.h"
 /**
- * _isupper - Checks if  variable c is uppercase
- * Return: if uppercase 1, otherwise 0
- *@c: vairable to be evaluated for upper case
+ * _isupper - Checks if  variable c is uppercase.
+ * Return: If uppercase 1, otherwise 0.
+ *@c: Vairable to be evaluated for upper case.
  */
 int _isupper(int c)
-
 {
 	int u;
 
