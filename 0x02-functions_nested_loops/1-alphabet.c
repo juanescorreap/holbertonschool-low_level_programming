@@ -6,6 +6,7 @@
 void print_alphabet(void)
 {
 	char ch = 97;
+
 	while (ch <= 122)
 	{
 		_putchar(ch);

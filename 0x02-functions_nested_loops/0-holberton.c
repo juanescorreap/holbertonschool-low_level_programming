@@ -6,6 +6,7 @@
 int main(void)
 {
 	char *ph = "Holberton\n";
+
 	while (*ph)
 	{
 		_putchar(*ph++);
