@@ -4,5 +4,5 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-How to use the exit function  
-What are the functions calloc and realloc from the standard library and how to use them  
+How to use the exit function<br />
+What are the functions calloc and realloc from the standard library and how to use them<br />
