@@ -4,5 +4,5 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-Look for the right source of information without too much help  
-How to manipulate bits and use bitwise operators  
+Look for the right source of information without too much help<br />
+How to manipulate bits and use bitwise operators<br />

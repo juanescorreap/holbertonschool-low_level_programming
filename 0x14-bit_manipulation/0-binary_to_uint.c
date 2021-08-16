@@ -26,7 +26,6 @@ unsigned int binary_to_uint(const char *b)
 			i++;
 		}
 		i--;
-
 		for (j = i; j >= 0; j--)
 		{
 			nu = nu + ((b[j] - '0') * fa);
