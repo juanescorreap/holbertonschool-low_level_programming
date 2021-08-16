@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * _strcat - Function that concatenates two strings
- * Return: Pointer of type char
- * @dest: First string to be concatenated
- * @src: String to be appended
+ * _strcat - Function that concatenates two strings.
+ * Return: Pointer of type char.
+ * @dest: First string to be concatenated.
+ * @src: String to be appended.
  */
 char *_strcat(char *dest, char *src)
 {
@@ -14,13 +14,11 @@ char *_strcat(char *dest, char *src)
 	{
 		a++;
 	}
-
 	while (src[i] != '\0')
 	{
 		dest[a] = src[i];
 		i++;
 		a++;
 	}
-
 	return (dest);
 }

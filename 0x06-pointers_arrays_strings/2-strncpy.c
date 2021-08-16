@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * *_strncpy - Function that copies a string
+ * _strncpy - Function that copies a string.
  * Return: Pointer of type char
  * @dest: First string to be concatenated
  * @src: String to be appended
