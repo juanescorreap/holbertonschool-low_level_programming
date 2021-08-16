@@ -1,10 +1,10 @@
 #include "3-calc.h"
 #include <stdlib.h>
 /**
- * op_add - Function that returns the sum of a and b
- * @a: Variable with value to be computed
- * @b: Variable with value to be computed
+ * op_add - Function that returns the sum of a and b.
  * Return: int.
+ * @a: Variable with value to be computed.
+ * @b: Variable with value to be computed.
  */
 int op_add(int a, int b)
 {

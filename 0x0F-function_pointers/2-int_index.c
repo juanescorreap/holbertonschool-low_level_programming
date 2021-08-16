@@ -4,10 +4,10 @@
 #include <stdlib.h>
 /**
  * int_index - Function that searches for an integer
+ * Return: int.
  * @array: Pointer to address of "array"
  * @size: Size of the array
  * @cmp: Pointer to a function that takes an int and returns an int.
- * Return: int.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {

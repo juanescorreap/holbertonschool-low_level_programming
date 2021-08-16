@@ -3,9 +3,9 @@
 #include <stdio.h>
 /**
  * get_op_func - Function that selects the correct function
- * to perform the operation asked by the user
- * @s:operator passed as argument to the program
+ * to perform the operation asked by the user.
  * Return: int.
+ * @s:operator passed as argument to the program.
  */
 int (*get_op_func(char *s))(int, int)
 {

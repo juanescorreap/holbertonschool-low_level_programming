@@ -2,9 +2,9 @@
 #include <stdio.h>
 /**
  * main - Program that prints the opcodes of its own main function.
- * @argc:Argument counter
- * @argv:Argument vectors
  * Return: int.
+ * @argc:Argument counter.
+ * @argv:Argument vectors.
  */
 int main(int argc, char *argv[])
 {
