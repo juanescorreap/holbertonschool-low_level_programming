@@ -3,9 +3,9 @@
 #include <stdarg.h>
 /**
  * print_numbers - Function that prints numbers, followed by a new line.
- * @n: Number of parameter of unsigned int type
+ * Return: Void.
  * @separator: Constant pointer to char that is to be printed as separator.
- * Return: void
+ * @n: Number of parameter of unsigned int type.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
