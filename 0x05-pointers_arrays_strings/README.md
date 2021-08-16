@@ -4,8 +4,8 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-What are pointers and how to use them  
-What are arrays and how to use them  
-What are the differences between pointers and arrays  
-How to use strings and how to manipulate them  
-Scope of variables  
+What are pointers and how to use them<br />
+What are arrays and how to use them<br />
+What are the differences between pointers and arrays<br />
+How to use strings and how to manipulate them<br />
+Scope of variables<br />
