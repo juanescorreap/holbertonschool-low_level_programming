@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
  * _strspn - Function that gets the length of a prefix substring.
- * Return: Unasigned integer representing the length of the prefix
- * @s: Pointer to the string in which the bytes will be counted
- * @accept: Pointer to the substring
+ * Return: Unasigned integer representing the length of the prefix.
+ * @s: Pointer to the string in which the bytes will be counted.
+ * @accept: Pointer to the substring.
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -28,6 +28,5 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		return (0);
 	}
-	return ((unsigned int) i - 1);
-
+	return ((unsigned int)i - 1);
 }
