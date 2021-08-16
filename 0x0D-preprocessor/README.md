@@ -4,6 +4,6 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-What are macros and how to use them  
-What are the most common predefined macros  
-How to include guard your header files  
+What are macros and how to use them<br />
+What are the most common predefined macros<br />
+How to include guard your header files<br />
