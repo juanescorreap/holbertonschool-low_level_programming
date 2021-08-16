@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * **alloc_grid - Function that returns a pointer
- * to a 2 dimensional array of integers
- * Return: Double pointer to the leading string
- * @width: Width of the matrix
- * @height: Height of the matrix
+ * alloc_grid - Function that returns a pointer
+ * to a 2 dimensional array of integers.
+ * Return: Double pointer to the leading string.
+ * @width: Width of the matrix.
+ * @height: Height of the matrix.
  */
 int **alloc_grid(int width, int height)
 {
