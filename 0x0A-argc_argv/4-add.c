@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - prints name
- * @argv: array whit arguements
- * @argc: number of arguments
- * Return: 0 if succesful
+ * main - Program that adds positive numbers.
+ * Return: 0 if succesful.
+ * @argc: Number of arguments passed to the function.
+ * @argv: Array of strings cointaining the arguments.
  */
 int main(int argc, char *argv[])
 {
