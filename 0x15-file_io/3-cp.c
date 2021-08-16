@@ -8,8 +8,8 @@
 #include "main.h"
 /**
  * file_copy - Program that copies the content of a file to another file.
+ * Return: Void.
  * @argv:Argument vectors
- * Return: int.
  */
 
 void file_copy(char *argv[])
