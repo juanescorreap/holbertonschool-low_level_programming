@@ -4,7 +4,7 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-What is the difference between automatic and dynamic allocation  
-What is malloc and free and how to use them  
-Why and when use malloc  
-How to use valgrind to check for memory leak  
+What is the difference between automatic and dynamic allocation<br />
+What is malloc and free and how to use them<br />
+Why and when use malloc<br />
+How to use valgrind to check for memory leak<br />

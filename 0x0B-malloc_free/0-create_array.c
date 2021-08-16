@@ -22,7 +22,6 @@ char *create_array(unsigned int size, char c)
 	{
 		return (00);
 	}
-
 	for (i = 0; i < size; i++)
 	{
 		pointer[i] = c;
