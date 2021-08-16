@@ -6,6 +6,7 @@
 int main(void)
 {
 	int ch = 97;
+
 	while (ch <= 122)
 	{
 		if (ch != 101 && ch != 113)

@@ -6,6 +6,7 @@
 int main(void)
 {
 	int ch = 122;
+
 	while (ch >= 97)
 	{
 		putchar(ch);

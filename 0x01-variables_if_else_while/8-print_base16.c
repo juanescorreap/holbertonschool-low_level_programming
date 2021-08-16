@@ -7,6 +7,7 @@ int main(void)
 {
 	int n = 48;
 	char l = 'a';
+
 	while (n <= 57)
 	{
 		putchar(n);
