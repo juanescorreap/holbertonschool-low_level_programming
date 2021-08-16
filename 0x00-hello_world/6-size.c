@@ -1,5 +1,6 @@
 /*
- * use printf to display the size fo various data types
+ * Program that prints the size of various types
+ * on the computer it is compiled and run on.
  */
 
 #include <stdio.h>

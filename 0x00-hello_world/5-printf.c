@@ -1,5 +1,6 @@
 /*
- * use printf to display a phrase
+ * Program that prints exactly "with proper grammar,
+ * but the outcome is a piece of art,", followed by a new line.
  */
 
 #include <stdio.h>
