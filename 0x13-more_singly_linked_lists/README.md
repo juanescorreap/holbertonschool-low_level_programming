@@ -4,5 +4,5 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-How to use linked lists  
-Start to look for the right source of information without too much help  
+How to use linked lists<br />
+Start to look for the right source of information without too much help<br />
