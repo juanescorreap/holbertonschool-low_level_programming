@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-		printf("%.2hhx", a[i]);
+			printf("%.2hhx", a[i]);
 		}
 	}
 	printf("\n");
