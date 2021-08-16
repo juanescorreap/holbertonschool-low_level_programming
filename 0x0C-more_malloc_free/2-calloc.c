@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * *_calloc - Function that allocates memory for an array, using malloc
+ * _calloc - Function that allocates memory for an array, using malloc.
  * Return: Pointer to allocated space in memory.
- * @nmemb: Number of elements to be allocated
- * @size: Size of elements
+ * @nmemb: Number of elements to be allocated.
+ * @size: Size of elements.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {

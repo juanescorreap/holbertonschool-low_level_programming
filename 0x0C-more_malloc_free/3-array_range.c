@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * *array_range - Function that allocates memory for an array, using malloc
- * @min: Inferior limit of the array
- * @max: Superior limit of the array
+ * array_range - Function that allocates memory for an array, using malloc.
  * Return: Pointer to allocated space in memory.
+ * @min: Inferior limit of the array.
+ * @max: Superior limit of the array.
  */
 int *array_range(int min, int max)
 {
