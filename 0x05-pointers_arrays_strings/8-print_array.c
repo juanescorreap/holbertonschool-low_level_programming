@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * print_array -  Function that prints n elements of an array of integers,
- * followed by a new line.
- * Return: void
+ * print_array -  Function that prints n elements of
+ * an array of integers, followed by a new line.
+ * Return: Void.
  * @a: String to be printed
  * @n: Number of elements in the array to be printed
  */

@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * puts_half - Function that prints half of a string, followed by a new line.
- * Return: void
- * @str: String to be printed
+ * Return: Void.
+ * @str: String to be printed.
  */
 void puts_half(char *str)
 {
@@ -21,9 +21,9 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (b = a / 2 ; a > b; b++)
+		for (b = a / 2; a > b; b++)
 		{
-		_putchar(str[b]);
+			_putchar(str[b]);
 		}
 	}
 	_putchar(10);

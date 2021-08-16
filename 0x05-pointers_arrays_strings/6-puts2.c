@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * puts2 - Function that prints every other character of a string
- * Return: void
+ * puts2 - Function that prints every other character of a string.
+ * Return: Void.
  * @str: String to be printed
  */
 void puts2(char *str)
