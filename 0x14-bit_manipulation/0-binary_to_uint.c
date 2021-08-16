@@ -5,8 +5,8 @@
 /**
  * binary_to_uint - Function that converts a
  * binary number to an unsigned int.
- * @b: Number to convert form binary to int.
  * Return: Number converted from binary int.
+ * @b: Number to convert form binary to int.
  */
 unsigned int binary_to_uint(const char *b)
 {

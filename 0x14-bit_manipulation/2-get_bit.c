@@ -4,10 +4,10 @@
 #include "main.h"
 /**
  * get_bit - Function that returns the
- * value of a bit at a given index
- * @index: Position in the number to be returned.
- * @n: Number to be evaluated
+ * value of a bit at a given index.
  * Return: value of the evaulated bit.
+ * @index: Position in the number to be returned.
+ * @n: Number to be evaluated.
  */
 
 int get_bit(unsigned long int n, unsigned int index)

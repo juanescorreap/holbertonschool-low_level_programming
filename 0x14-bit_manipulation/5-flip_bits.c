@@ -5,9 +5,9 @@
 /**
  * flip_bits - Function that returns the number of bits
  * you would need to flip to get from one number to another
- * @n:Starting number
- * @m: Destination number
- * Return:Number of bits fliped
+ * Return:Number of bits fliped.
+ * @n:Starting number.
+ * @m: Destination number.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
