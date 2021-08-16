@@ -4,6 +4,6 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-What are pointers to pointers and how to use them  
-What are multidimensional arrays and how to use them  
-What are the most common C standard library functions to manipulate strings  
+What are pointers to pointers and how to use them<br />
+What are multidimensional arrays and how to use them<br />
+What are the most common C standard library functions to manipulate strings<br />
