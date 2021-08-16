@@ -4,5 +4,5 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-What are structures, when, why and how to use them  
-How to use typedef  
+What are structures, when, why and how to use them<br />
+How to use typedef<br />
