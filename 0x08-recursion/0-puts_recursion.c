@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _puts_recursion - Function that prints a string, followed by a new line.
- * Return: Void
+ * Return: Void.
  * @s: Pointer to the string to be printed
  */
 void _puts_recursion(char *s)

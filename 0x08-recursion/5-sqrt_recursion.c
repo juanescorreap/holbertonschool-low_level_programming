@@ -3,9 +3,9 @@
 /**
  * sqrt_iteration - Function that iterates to find
  * the natural square root of a number.
- * Return: Result of the operation
- * @n: Number whose square roote is to be found
- * @x: Number to be computed as a possible answer
+ * Return: Result of the operation (int).
+ * @n: Number whose square roote is to be found.
+ * @x: Number to be computed as a possible answer.
  */
 int sqrt_iteration(int n, int x)
 {
@@ -24,8 +24,8 @@ int sqrt_iteration(int n, int x)
 }
 /**
  * _sqrt_recursion - Function that returns the natural square root of a number.
- *  Return: Result of the operation
- * @n: Number whose square roote is to be found
+ *  Return: Result of the operation.
+ * @n: Number whose square roote is to be found.
  */
 int _sqrt_recursion(int n)
 {

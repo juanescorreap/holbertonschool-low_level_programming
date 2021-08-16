@@ -2,12 +2,11 @@
 #include <stdio.h>
 /**
  * prime_iteration - Function that iterates to find
- * if a number is prime
- * Return: Result of the operation
- * @n: Number to be evaluated
- * @x: Number to divide by
+ * if a number is prime.
+ * Return: Result of the operation (int).
+ * @n: Number to be evaluated.
+ * @x: Number to divide by.
  */
-
 int prime_iteration(int n, int x)
 {
 

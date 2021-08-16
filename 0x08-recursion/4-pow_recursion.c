@@ -3,9 +3,9 @@
 /**
  * _pow_recursion - Function that returns
  * the value of x raised to the power of y.
- * Return: Result of the operation
- * @x: Base number
- * @y: Exponent number
+ * Return: Result of the operation (int).
+ * @x: Base number.
+ * @y: Exponent number.
  */
 int _pow_recursion(int x, int y)
 {
