@@ -1,6 +1,6 @@
 #include "main.h"
 int _atoi(char *s)
 {
-	(void)s;
-	return(0);
+	(void) s;
+	return (0);
 }
