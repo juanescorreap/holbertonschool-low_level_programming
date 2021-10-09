@@ -14,13 +14,10 @@ hash_node_t *hs_allocate(const char *key, const char *value)
 {
 	hash_node_t *entry = NULL;
 
-	entry = malloc(sizeof(entry) * 1 );
-	entry->key = malloc(strlen(key) + 1);
-	entry->value = malloc(strlen(value) + 1);
+	entry = malloc(sizeof(hash_node_t*));
 
-	strcpy(entry->key, key);
-	strcpy(entry->value, value);
-
+	entry->key = (char*)key;
+	entry->value = (char*)value;
 	entry->next = NULL;
 
 	return(entry);
