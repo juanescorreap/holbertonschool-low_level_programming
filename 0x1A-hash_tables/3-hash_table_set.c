@@ -17,6 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *tmp = NULL;
 	hash_node_t *entry = NULL;
+
 	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
 	{
 		return (0);
@@ -24,9 +25,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, ht->size);
 	if (entry == NULL)
 	{
-		return(0);
+		return (0);
 	}
-	if(ht->array[index] == NULL)
+	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = hs_allocate(key, value);
 	}
@@ -45,8 +46,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		entry = tmp->next;
 	}
 	write(2, "Print 1\n", 8);
-	entry->key = (char*)key;
-	entry->value = (char*)value;
+	entry->key = (char *)key;
+	entry->value = (char *)value;
 	entry->next = NULL;
 	return (1);
 }
