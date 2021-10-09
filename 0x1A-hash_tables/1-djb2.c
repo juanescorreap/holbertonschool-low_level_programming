@@ -1,11 +1,7 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "hash_tables.h"
 /**
- * hash_djb2 - Function
- * that assigns an index from the array
- * to the key
+ * hash_djb2 - Function that assigns an index
+ * from the array to the key
  * Return: Index
  * hash table.
  * @str: size of the hash table

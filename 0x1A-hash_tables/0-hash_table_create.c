@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "hash_tables.h"
 /**
  * hash_table_create - Function
@@ -21,7 +18,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		return (NULL);
 	}
-	hash_table->array = malloc(sizeof(hash_node_t*) * size);
+	hash_table->array = malloc(sizeof(hash_node_t *) * size);
 	if (hash_table->array == NULL)
 	{
 		return (NULL);
