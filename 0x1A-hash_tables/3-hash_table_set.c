@@ -11,13 +11,13 @@ hash_node_t *hs_allocate(const char *key, const char *value)
 {
 	hash_node_t *entry = NULL;
 
-	entry = malloc(sizeof(hash_node_t*));
+	entry = malloc(sizeof(hash_node_t *));
 
-	entry->key = (char*)key;
-	entry->value = (char*)value;
+	entry->key = (char *)key;
+	entry->value = (char *)value;
 	entry->next = NULL;
 
-	return(entry);
+	return (entry);
 }
 
 /**
