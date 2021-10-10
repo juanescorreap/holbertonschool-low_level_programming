@@ -51,17 +51,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ht->array[index] = hs_allocate(key, cp_value);
 		return (1);
 	}
-	else if (strcmp(entry->key, key) != 0)
+	else if (strcmp(entry->key, key) == 0)
 	{
-		tmp = ht->array[index];
-		ht->array[index] = hs_allocate(key, cp_value);
-		entry->next = tmp;
+		free(entry->value);
+		entry->value = cp_value;
 		return (1);
 	}
 	else
 	{
-		free(entry->value);
-		entry->value = cp_value;
+		tmp = ht->array[index];
+		ht->array[index] = hs_allocate(key, cp_value);
+		entry->next = tmp;
 		return (1);
 	}
 	return (0);
