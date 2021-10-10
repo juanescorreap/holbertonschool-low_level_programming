@@ -1,12 +1,10 @@
 #include "hash_tables.h"
 /**
- * hash_table_set - Function that creates a
- * node 
- * Return: 1 if it succeeded, 0 otherwise
- * @key: key to be added
- * @value: value that goes with the key
- * @ht: Pointer to hash table
- *
+ * create_node - Function that creates an
+ * entry and assigns key and value
+ * Return: Pointer to the entry, NULL if something fails
+ * @cp_key: key to be added
+ * @cp_value: value that goes with the key
  */
 hash_node_t *create_node(char *cp_key, char *cp_value)
 {
@@ -15,22 +13,21 @@ hash_node_t *create_node(char *cp_key, char *cp_value)
 	entry = malloc(sizeof(hash_node_t *));
 	if (entry == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	entry->key = cp_key;
 	if (entry->key == NULL)
 	{
 		free(entry);
-		return (0);
+		return (NULL);
 	}
 	entry->value = cp_value;
 	if (entry->value == NULL)
 	{
 		free(entry->key);
 		free(entry);
-		return (0);
+		return (NULL);
 	}
-
 	return (entry);
 }
 /**
@@ -40,7 +37,6 @@ hash_node_t *create_node(char *cp_key, char *cp_value)
  * @key: key to be added
  * @value: value that goes with the key
  * @ht: Pointer to hash table
- *
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -73,6 +69,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		tmp = tmp->next;
 	}
 	entry = create_node(cp_key, cp_value);
+	if (entry == NULL)
+	{
+		return (0);
+	}
 	entry->next = ht->array[index];
 	ht->array[index] = entry;
 	return (1);
