@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+
 /**
  * hs_allocate - Function that adds an
  * element to the hash table.
@@ -32,8 +33,7 @@ hash_node_t *hs_allocate(const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	/*hash_node_t *tmp = NULL;*/
-	hash_node_t *entry = NULL;
+	hash_node_t *entry = NULL, *tmp = NULL;
 	char *cp_value;
 
 	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
@@ -46,15 +46,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	index = key_index((unsigned char *)key, ht->size);
+	tmp = ht->array[index];
+
+	while (tmp)
+	{
+		if (strcmp(tmp->key, key) == 0)
+		{
+			free(tmp->value);
+			tmp->value = cp_value;
+			return (1);
+		}
+		tmp = tmp->next;
+	}
 	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = hs_allocate(key, cp_value);
-		return (1);
-	}
-	else if (strcmp(entry->key, key) == 0)
-	{
-		free(entry->value);
-		entry->value = cp_value;
 		return (1);
 	}
 	else
