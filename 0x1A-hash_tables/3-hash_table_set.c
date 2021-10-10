@@ -32,30 +32,37 @@ hash_node_t *hs_allocate(const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	/*hash_node_t *tmp = NULL;*/
+	hash_node_t *tmp = NULL;
 	hash_node_t *entry = NULL;
+	char *cp_value;
 
 	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
+	{
+		return (0);
+	}
+	cp_value = strdup(value);
+	if (cp_value == NULL)
 	{
 		return (0);
 	}
 	index = key_index((unsigned char *)key, ht->size);
 	if (ht->array[index] == NULL)
 	{
-		ht->array[index] = hs_allocate(key, value);
-		write(2, "Print 1\n", 8);
+		ht->array[index] = hs_allocate(key, cp_value);
 		return (1);
 	}
-	while (entry != NULL)
+	else if (strcmp(entry->key, key) != 0)
 	{
-
-		if (strcmp(entry->key, key) == 0)
-		{
-			entry->value = (char *)value;
-			return (1);
-		}
-
-		entry->next = hs_allocate(key, value);
+		tmp = ht->array[index];
+		ht->array[index] = hs_allocate(key, cp_value);
+		entry->next = tmp;
+		return (1);
 	}
-	return (1);
+	else
+	{
+		free(entry->value);
+		entry->value = cp_value;
+		return (1);
+	}
+	return (0);
 }
