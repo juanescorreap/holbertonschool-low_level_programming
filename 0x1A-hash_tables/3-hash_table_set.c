@@ -53,8 +53,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, ht->size);
 	tmp = ht->array[index];
 	cp_value = strdup(value);
-	cp_key = strdup(key);
 	if (cp_value == NULL)
+	{
+		return (0);
+	}
+	cp_key = strdup(key);
+	if (cp_key == NULL)
 	{
 		return (0);
 	}
