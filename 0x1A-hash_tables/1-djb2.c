@@ -1,11 +1,9 @@
 #include "hash_tables.h"
 /**
- * hash_djb2 - Function that assigns an index
- * from the array to the key
- * Return: Index
- * hash table.
+ * hash_djb2 - Function that retuns an integer
+ * upon which the index is to be calculated
+ * Return: Integer
  * @str: size of the hash table
- *
  */
 unsigned long int hash_djb2(const unsigned char *str)
 {
