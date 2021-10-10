@@ -32,7 +32,7 @@ hash_node_t *hs_allocate(const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *tmp = NULL;
+	/*hash_node_t *tmp = NULL;*/
 	hash_node_t *entry = NULL;
 	char *cp_value;
 
@@ -59,9 +59,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		tmp = ht->array[index];
+		entry->next = ht->array[index];
 		ht->array[index] = hs_allocate(key, cp_value);
-		entry->next = tmp;
 		return (1);
 	}
 	return (0);
