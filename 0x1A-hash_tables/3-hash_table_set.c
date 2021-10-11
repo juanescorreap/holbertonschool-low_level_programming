@@ -17,6 +17,7 @@ hash_node_t *create_node(char *cp_key, char *cp_value)
 	}
 	entry->key = cp_key;
 	entry->value = cp_value;
+	entry->next = NULL;
 	return (entry);
 }
 /**
