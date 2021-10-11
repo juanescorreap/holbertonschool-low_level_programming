@@ -16,18 +16,7 @@ hash_node_t *create_node(char *cp_key, char *cp_value)
 		return (NULL);
 	}
 	entry->key = cp_key;
-	if (entry->key == NULL)
-	{
-		free(entry);
-		return (NULL);
-	}
 	entry->value = cp_value;
-	if (entry->value == NULL)
-	{
-		free(entry->key);
-		free(entry);
-		return (NULL);
-	}
 	return (entry);
 }
 /**
