@@ -18,7 +18,7 @@ void free_list(hash_node_t *head)
 	}
 }
 /**
- * hash_table_print -Function that deletes a hash table.
+ * hash_table_delete -Function that deletes a hash table.
  * Return: Void
  * @ht: Hash table
  */
